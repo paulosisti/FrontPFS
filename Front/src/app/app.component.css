@@ -1,0 +1,5 @@
+main {
+  background: linear-gradient(#fff, rgb(202, 202, 202));
+  background-size: cover;
+  min-height: 60vh;
+}

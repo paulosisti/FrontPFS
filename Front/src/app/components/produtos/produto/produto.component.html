@@ -1,0 +1,13 @@
+<div class="pensamento {{ produto.model }} ff-roboto-mono " [ngClass]="larguraProduto()">
+  <img src="/assets/images/{{produto.model}}.png" alt="aspas coloridas">
+  <p class="conteudo">{{ produto.name }}</p>
+  <p class="autoria"><b>{{ produto.price }}</b></p>
+  <div class="acoes">
+    <button class="botao-editar" routerLink="/produtos/editarProduto/{{produto.id}}">
+      <img src="/assets/images/editar.png" alt="icone editar">
+    </button>
+    <button class="botao-excluir" routerLink="/produtos/excluirProduto/{{produto.id}}">
+      <img src="/assets/images/caixa.png" alt="icone excluir">
+    </button>
+  </div>
+</div>
